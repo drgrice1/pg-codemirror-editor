@@ -1,5 +1,8 @@
 import { tags as t } from '@lezer/highlight';
+import { EditorView } from '@codemirror/view';
 import { HighlightStyle, syntaxHighlighting } from '@codemirror/language';
+
+const lightEditorTheme = EditorView.theme({ '&': { backgroundColor: 'white' } }, { dark: false });
 
 export const lightHighlightStyle = HighlightStyle.define([
     { tag: t.meta, color: '#404740' },
@@ -25,4 +28,4 @@ export const lightHighlightStyle = HighlightStyle.define([
     { tag: t.invalid, color: '#f00' }
 ]);
 
-export const lightTheme = syntaxHighlighting(lightHighlightStyle, { fallback: true });
+export const lightTheme = [lightEditorTheme, syntaxHighlighting(lightHighlightStyle, { fallback: true })];
