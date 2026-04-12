@@ -3,19 +3,19 @@
         "target": "es2022",
         "lib": ["esnext", "dom"],
         "module": "esnext",
-        "moduleResolution": "node",
+        "moduleResolution": "bundler",
         "allowJs": true,
         "esModuleInterop": true,
         "sourceMap": true,
         "strict": true,
         "resolveJsonModule": true,
         "forceConsistentCasingInFileNames": true,
-        "rootDir": "src",
-        "baseUrl": ".",
+        "noUncheckedSideEffectImports": false,
+        "rootDir": "./src",
         "paths": {
-            "src/*": ["src/*"]
+            "src/*": ["./src/*"]
         }
     },
-    "include": ["src"],
-    "exclude": ["node_modules"]
+    "include": ["./src"],
+    "exclude": ["./node_modules"]
 }
