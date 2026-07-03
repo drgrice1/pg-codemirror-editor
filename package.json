@@ -66,5 +66,8 @@
     },
     "overrides": {
         "uuid": "^14.0.1"
+    },
+    "allowScripts": {
+        "@parcel/watcher": false
     }
 }
