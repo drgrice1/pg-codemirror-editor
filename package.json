@@ -65,7 +65,8 @@
         "webpack-dev-server": "^5.2.3"
     },
     "overrides": {
-        "uuid": "^14.0.1"
+        "uuid": "^14.0.1",
+        "qs": "^6.16.0"
     },
     "allowScripts": {
         "@parcel/watcher": false
